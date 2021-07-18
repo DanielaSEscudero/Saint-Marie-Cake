@@ -1,0 +1,38 @@
+/*main general*/
+
+main {
+  background-image: url(../multimedia/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  h1 {
+    color: #f04eb5;
+    font-family: "Roboto", sans-serif;
+    font-size: 4rem;
+    padding: 1rem;
+  }
+  h2 {
+    color: #f04eb5;
+    border-color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 3rem;
+  }
+  p {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    color: hsl(324, 5%, 20%);
+    margin-right: 30px;
+  }
+  section div p {
+    font-size: 1.5rem;
+    color: hsl(324, 5%, 20%);
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    top: 10%;
+  }
+}

@@ -1,0 +1,28 @@
+/*pie de paginas......................................*/
+footer {
+  background: linear-gradient(to bottom, rgb(12, 12, 12), grey);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .redesPie {
+    font-size: 3rem;
+    margin: 1rem;
+    display: inline-block;
+    i {
+      color: #12c8dd;
+      margin: 2rem;
+      padding: 1rem;
+      list-style: none;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+footer .redesPie i:hover {
+  color: white;
+  font-size: 4rem;
+}

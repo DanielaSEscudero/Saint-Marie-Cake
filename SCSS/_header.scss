@@ -1,0 +1,64 @@
+/* estilo header*/
+header {
+  margin: 0.5 rem;
+  padding: 0.2 rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#logo a img {
+  margin-left: 5rem;
+}
+.navbar-toggler-icon {
+  background-color: $color-fondo;
+  border-radius: 2rem;
+  font-size: 4rem;
+  margin-right: 5rem;
+}
+#barraNav{
+  font-family: $nav-font;
+  text-decoration: none;
+}
+.nav-link {
+  font-family: $nav-font;
+  font-size: 1.8rem;
+  color: $color-font;
+  text-decoration: none;
+  
+}
+
+
+header nav {
+  font-size: 2rem;
+  font-family: "Inconsolata", monospace;
+  color: black;
+}
+header .nav-item{
+  padding: 0 0.8rem;
+  list-style: none;
+  box-shadow: #ebc5ce;
+}
+header nav .navbar-nav{
+  display: flex;
+  margin: 0.3rem;
+  padding: 0.5rem;
+
+}
+
+.nav-link:hover {
+  color: $color-sec;
+  background-color: #ebc5ce;
+  border-radius: 5rem;
+}
+
+#whats {
+  color: black;
+  font-size: 5rem;
+  top: 20px;
+  overflow: auto;
+  text-decoration: none;
+  i:hover {
+    color: $color-sec;
+    font-size: 5.5rem;
+  }
+}

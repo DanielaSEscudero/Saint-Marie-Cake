@@ -1,0 +1,70 @@
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+  html {
+    font-size: 42%;
+  }
+  .clearfix img {
+    margin: 4rem;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+  html {
+    font-size: 47%;
+  }
+
+  #formulario {
+    grid-template-areas:
+      "titulo titulo"
+      "nombre  nombre"
+      "motivo motivo"
+      "telefono telefono"
+      "whatsaap whatsaap"
+      "mensaje mensaje"
+      "borrar enviar";
+  }
+  .contenedor-Productos {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+  }
+  .galeria img {
+    padding: 3rem;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
+  html {
+    font-size: 55%;
+  }
+  #barraNav li a {
+    font-size: 1.5rem;
+  }
+  #logo a img {
+    width: 70%;
+    height: 70%;
+  }
+}
+
+/*media header*/
+@media (max-width: 600px) {
+  .navbar {
+    align-items: flex-start;
+  }
+  .navbar-toggler {
+    display: flex;
+  }
+  .navbar-link {
+    display: none;
+    width: 100%;
+    ul {
+      width: 100%;
+      flex-direction: column;
+      a {
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+}

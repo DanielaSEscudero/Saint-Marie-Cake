@@ -1,0 +1,95 @@
+#formulario {
+  background-image: url(../multimedia/pexels-david-jakab-959079.jpg);
+  font-family: $nav-font;
+  font-size: 2rem;
+  display: grid;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  align-items: stretch;
+  justify-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "titulo titulo"
+    "nombre  mensaje"
+    "motivo mensaje"
+    "telefono mensaje"
+    "whatsaap mensaje"
+    "borrar enviar";
+}
+.titulo__contacto {
+  grid-area: titulo;
+  font-family: $titulo-font;
+  margin-left: 5rem;
+  color: $color-font;
+}
+.datos--1 {
+  grid-area: nombre;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 5rem;
+}
+.datos--2 {
+  grid-area: motivo;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 5rem;
+}
+.datos--3 {
+  grid-area: telefono;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 5rem;
+}
+.datos--4 {
+  grid-area: whatsaap;
+  border: 1px solid black;
+  border-radius: 5rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+.datos--5 {
+  grid-area: mensaje;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 3rem;
+}
+input {
+  width: 10rem;
+  transition: all 2s;
+}
+input:focus {
+  width: 30rem;
+  font-size: 2rem;
+}
+textarea {
+  width: 35rem;
+  height: 27rem;
+  transition: all 2s;
+}
+textarea:focus {
+  width: 45rem;
+  height: 30rem;
+  font-size: 2rem;
+}
+.btn--Borrar {
+  font-size: 2rem;
+  grid-area: borrar;
+  margin: 1rem;
+  padding: 1rem;
+  justify-content: center;
+}
+.btn--Enviar {
+  font-size: 2rem;
+  grid-area: enviar;
+  margin: 1rem;
+  padding: 1rem;
+}

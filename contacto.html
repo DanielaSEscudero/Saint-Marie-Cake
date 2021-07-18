@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="formulario de contacto con Saint Marie Cake, para cotizaciones y pedidos">
+    <meta name="keywords" content="contacto, pedidos, presupuesto, cotizacion, tortas, pasteles">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Montserrat&family=Permanent+Marker&family=Slackey&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet"> 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- FontAwesome --> 
+    <script
+      src="https://kit.fontawesome.com/7d4193cf05.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>SaintMarieCake Contacto</title>
+  </head>
+  <body>
+    <header class="row">
+      <nav class="navbar navbar-expand-lg " style="background-color: white;"> 
+        <div id="logo" class="col-4" style="text-decoration: none;">
+          <a href="index.html"
+            ><img 
+              src="multimedia/logo.jpg"
+              width="210px 210px"
+              alt="logo" /></a>
+        </div>
+        <div id="whats" class="col-2 row-cols-md-1">
+          <li><a href="https://wa.me/1137950122">
+            <i class="fab fa-whatsapp"></i></a>
+          </li>
+        </div>
+        <div class="navbar-items" id="navBarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav col-6 me-auto mb-2 mb-lg-0" id="barraNav" style="text-align: right;">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="productos.html">PRODUCTOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="galeria.html">GALERIA</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="contacto.html">CONTACTO</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <main id="formulario">
+      <h1 class="titulo__contacto">Formulario de Contacto</h1>
+      <div class="datos--1">
+        <label for="Nombre">Nombre y Apellido:</label>
+        <input
+          type="text"
+          id="Nombre"
+          name="Nombre"
+          placeholder="Escribe tu nombre"/>
+      </div>
+      <div class="datos--2">
+        Motivo de contacto:
+        <select name="Motivo" id="Motivo">
+          Motivo de Contacto
+          <option value="Presupuesto">Presupuesto</option>
+          <option value="Pedido">Pedido</option>
+        </select>
+      </div>
+      <div class="datos--3">
+        <label for="Telefono">Telefono de contacto:</label>
+        <input type="Telefono de contacto" placeholder="Escribe tu numero" />
+      </div>
+      <div class="datos--4">
+        Recibir whatsapp?
+        <label for="whatsapp?"></label>
+        <input type="checkbox" id="whatsapp" />
+      </div>
+      <div class="datos--5">
+        Dejanos tu mensaje: <br />
+        <textarea name="mensaje" id="mensaje" cols="50" rows="12"></textarea>
+      </div>
+      <div class="boton btn--Borrar"><input type="submit" value="Borrar" /></div>
+      <div class="boton btn--Enviar"><input type="submit" value="Enviar" /></div>
+  
+    </main>
+    <footer id="pieDePagina">
+      <div class="redesPie">
+        <a
+          href="https://www.tiktok.com/@mayrariveros8?lang=es&is_copy_url=1&is_from_webapp=v1"
+          target="_blank"
+        ><i class="fab fa-tiktok"></i>
+          </a>
+        <a
+          href="https://www.facebook.com/Saint-Marie-Cositas-Dulces-487951608066101"
+          target="_blank"
+          ><i class="fab fa-facebook-square"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/saintmarie_cake/?hl=es-la"
+          target="_blank"
+          ><i class="fab fa-instagram"></i>
+      </div>
+    </footer>
+    <div class="container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Saint Marie Cake</a></li>
+        <li class="breadcrumb-item active">Contacto</li>
+      </ol>
+    </div>
+    <script src="bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>
