@@ -267,7 +267,9 @@ footer .redesPie a {
 
 .titulo__tienda {
   font-family: "Dancing Script", cursive;
-  margin-left: 5rem;
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 12rem;
   color: #5b5b5b;
 }
 
@@ -457,17 +459,22 @@ div[class*=slideRight]:hover img {
   border-radius: 5rem;
 }
 
-.galeria h1, .galeria .h1 {
+.tituloGaleria {
   font-family: "Dancing Script", cursive;
+  font-size: 5rem;
   color: #5b5b5b;
-  justify-content: center;
+  text-align: center;
+  margin-top: 12rem;
+  margin-bottom: 4rem;
 }
 
 .titulo__nosotros {
   font-family: "Dancing Script", cursive;
-  margin-left: 5rem;
+  font-size: 5rem;
+  text-align: center;
   color: #5b5b5b;
-  justify-content: space-between;
+  margin-top: 12rem;
+  margin-bottom: 4rem;
 }
 
 .clearfix p {
@@ -502,6 +509,9 @@ div[class*=slideRight]:hover img {
   font-family: "Dancing Script", cursive;
   margin-left: 5rem;
   color: #5b5b5b;
+  text-align: center;
+  margin-top: 12rem;
+  margin-bottom: 3rem;
 }
 
 .datos--1 {

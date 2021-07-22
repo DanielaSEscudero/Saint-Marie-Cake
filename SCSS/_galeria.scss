@@ -35,8 +35,12 @@ div[class*="slideRight"] {
   max-width: 100%;
   border-radius: $bordes-redon;
 }
-.galeria h1 {
+.tituloGaleria {
   font-family: $titulo-font;
+  font-size: 5rem;
   color: $color-font;
-  justify-content: center;
+  text-align: center;
+  margin-top: 12rem;
+  margin-bottom: 4rem;
+
 }

@@ -1,8 +1,10 @@
 .titulo__nosotros {
   font-family: $titulo-font;
-  margin-left: 5rem;
+  font-size: 5rem;
+  text-align: center;
   color: $color-font;
-  justify-content: space-between;
+  margin-top: 12rem;
+  margin-bottom: 4rem;
 }
 .clearfix p {
   margin: 5rem;
