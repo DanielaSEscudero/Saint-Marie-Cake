@@ -4,7 +4,8 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: space-between;
+  align-items: flex-start;
 
   .redesPie {
     font-size: 3rem;
@@ -22,7 +23,18 @@ footer {
   }
 }
 
-footer .redesPie i:hover {
-  color: white;
-  font-size: 4rem;
+.contactoPie p i{
+  font-size: 1.5rem;
+  color:$color-fondo
+
 }
+.datosPie p{
+  color: $color-fondo;
+  font-size: 1.5rem;
+}
+
+.derechosPie{
+  font-size: 1.2rem;
+  color: $color-fondo;
+  text-decoration: none;
+}        
