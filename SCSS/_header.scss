@@ -61,18 +61,17 @@ header nav .navbar-nav{
 }
 
 .logoWsp{
-  width: 8rem;
+  width: 5rem;
   height: auto;
   position: fixed;
   left: 90%;
   bottom: 20%;
   animation-timing-function: linear;
   z-index: 2;
-  &:hover{
-    animation: name duration timing-function delay iteration-count direction fill-mode;
-  }
 }
-
+.logoWsp:hover{
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+}
 .d-block{
   opacity:75%;
 }
