@@ -92,7 +92,7 @@ header nav .navbar-nav {
 }
 
 .logoWsp {
-  width: 8rem;
+  width: 5rem;
   height: auto;
   position: fixed;
   left: 90%;
@@ -100,6 +100,7 @@ header nav .navbar-nav {
   animation-timing-function: linear;
   z-index: 2;
 }
+
 .logoWsp:hover {
   animation: name duration timing-function delay iteration-count direction fill-mode;
 }
