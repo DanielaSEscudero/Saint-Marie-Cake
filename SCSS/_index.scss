@@ -1,16 +1,12 @@
 .contenedor__inicio {
-  background-image: url(../multimedia/pexels-silvia-trigo-1857157.jpg);
   height: 50vh;
 }
+
 .contenedor__principal {
   flex-direction: row;
   justify-content: center;
 }
-.titulo {
-  color: black;
-  font-family: "Dancing Script", cursive;
-  font-size: $titulos-size;
-}
+
 
 .cierre {
   color: black;

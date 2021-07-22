@@ -25,15 +25,15 @@ ul {
 
 /* estilo header*/
 header {
-  margin: 0.5 rem;
-  padding: 0.2 rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
 #logo a img {
-  margin-left: 5rem;
+  border-radius: 100%;
+  margin-left: 10rem;
+  margin-top: 10rem;
 }
 
 .navbar-toggler-icon {
@@ -48,14 +48,24 @@ header {
   text-decoration: none;
 }
 
+#navbarSupportedContent {
+  border-radius: 5rem;
+  background-color: white;
+}
+
 .nav-link {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-size: 1.8rem;
-  color: #5b5b5b;
-  text-decoration: none;
+  font-size: 2rem;
+}
+
+.titulo {
+  color: black;
+  font-family: "Dancing Script", cursive;
+  font-size: 5rem;
 }
 
 header nav {
+  height: 15vh;
   font-size: 2rem;
   font-family: "Inconsolata", monospace;
   color: black;
@@ -65,30 +75,37 @@ header .nav-item {
   padding: 0 0.8rem;
   list-style: none;
   box-shadow: #ebc5ce;
+  text-decoration: none;
 }
 
 header nav .navbar-nav {
   display: flex;
   margin: 0.3rem;
   padding: 0.5rem;
+  text-decoration: none;
 }
 
 .nav-link:hover {
   color: #12c8dd;
-  background-color: #ebc5ce;
+  background-color: #b88d97;
   border-radius: 5rem;
 }
 
-#whats {
-  color: black;
-  font-size: 5rem;
-  top: 20px;
-  overflow: auto;
-  text-decoration: none;
+.logoWsp {
+  width: 8rem;
+  height: auto;
+  position: fixed;
+  left: 90%;
+  bottom: 20%;
+  animation-timing-function: linear;
+  z-index: 2;
 }
-#whats i:hover {
-  color: #12c8dd;
-  font-size: 5.5rem;
+.logoWsp:hover {
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+.d-block {
+  opacity: 75%;
 }
 
 /*main general*/
@@ -135,7 +152,8 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: space-between;
+  align-items: flex-start;
 }
 footer .redesPie {
   font-size: 3rem;
@@ -152,25 +170,29 @@ footer .redesPie a {
   text-decoration: none;
 }
 
-footer .redesPie i:hover {
-  color: white;
-  font-size: 4rem;
+.contactoPie p i {
+  font-size: 1.5rem;
+  color: #ebc5ce;
+}
+
+.datosPie p {
+  color: #ebc5ce;
+  font-size: 1.5rem;
+}
+
+.derechosPie {
+  font-size: 1.2rem;
+  color: #ebc5ce;
+  text-decoration: none;
 }
 
 .contenedor__inicio {
-  background-image: url(../multimedia/pexels-silvia-trigo-1857157.jpg);
   height: 50vh;
 }
 
 .contenedor__principal {
   flex-direction: row;
   justify-content: center;
-}
-
-.titulo {
-  color: black;
-  font-family: "Dancing Script", cursive;
-  font-size: 5rem;
 }
 
 .cierre {
@@ -623,7 +645,8 @@ textarea:focus {
   }
 }
 #error {
-  height: 90vh;
+  width: 100%;
+  height: 70vh;
   background-color: #ebc5ce;
 }
 #error section h2, #error section .h2 {
@@ -637,20 +660,12 @@ textarea:focus {
 #error section div {
   position: relative;
 }
-#error section div .error {
-  font-family: "Dancing Script", cursive;
-  text-align: center;
-  text-shadow: 2px 2px 2px #ceccc4;
-  font-size: 9rem;
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.3);
-}
 #error section div h2, #error section div .h2 {
   position: absolute;
-  top: 35%;
+  top: 25%;
   width: 100%;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: #5b5b5b;
 }
@@ -661,12 +676,17 @@ textarea:focus {
 }
 #error section h3 a, #error section .h3 a {
   font-size: 5rem;
-  color: white;
+  color: #5b5b5b;
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 #error section h3 a:hover, #error section .h3 a:hover {
   color: #12c8dd;
+}
+
+.error404 {
+  margin-top: 0rem;
+  margin-left: 53rem;
 }
 
 /*!
