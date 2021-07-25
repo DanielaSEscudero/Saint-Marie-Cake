@@ -35,12 +35,28 @@ div[class*="slideRight"] {
   max-width: 100%;
   border-radius: $bordes-redon;
 }
-.tituloGaleria {
+.titulo_Galeria {
   font-family: $titulo-font;
-  font-size: 5rem;
+  font-size: $titulos-size;
   color: $color-font;
   text-align: center;
   margin-top: 12rem;
   margin-bottom: 4rem;
 
+}
+.sub-galeria{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+
+  .sub-link{
+    text-decoration: none;
+    font-size: 2rem;
+  
+  &:hover{
+    background-color: #b88d97;
+    border-radius: $bordes-redon;
+  }  
+  }
 }

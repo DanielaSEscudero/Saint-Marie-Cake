@@ -24,11 +24,11 @@
 .titulo__contacto {
   grid-area: titulo;
   font-family: $titulo-font;
-  margin-left: 5rem;
+  font-size: $titulos-size;
   color: $color-font;
   text-align: center;
   margin-top: 12rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 
 }
 .datos--1 {

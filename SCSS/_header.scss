@@ -19,10 +19,7 @@ header {
   font-family: $nav-font;
   text-decoration: none;
 }
-#navbarSupportedContent{
-  border-radius: 5rem;
-  background-color: white;
-}
+
 
 .nav-link {
   font-family: $nav-font;
@@ -73,7 +70,4 @@ header nav .navbar-nav{
 }
 .logoWsp:hover{
   animation: name duration timing-function delay iteration-count direction fill-mode;
-}
-.d-block{
-  opacity:75%;
 }

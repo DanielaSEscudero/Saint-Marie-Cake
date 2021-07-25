@@ -8,10 +8,11 @@
 }
 .titulo__tienda {
   font-family: $titulo-font;
-  font-size: 5rem;
+  font-size: $titulos-size;
+  color: $color-font;
   text-align: center;
   margin-top: 12rem;
-  color: $color-font;
+  margin-bottom: 4rem;
 }
 .contenedor-Productos {
   padding: 1rem 0;
