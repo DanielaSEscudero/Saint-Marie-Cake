@@ -44,10 +44,8 @@
   .galeria img {
     padding: 3rem;
   }
-  .container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl{
+  .box-derecha, .box-izquierda{
     flex-direction: column;
-    margin: 1rem;
-    padding: 1rem;
   }
 }
 
