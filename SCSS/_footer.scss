@@ -21,22 +21,18 @@ footer {
       text-decoration: none;
     }
   }
+  .datos_pie p{
+    color: $color-fondo;
+    font-size: 1.5rem;
+  }
+  
+  .derechos_pie{
+    font-size: 1.6rem;
+    color: $color-fondo;
+    text-decoration: none;
+    padding: 3rem;
+    margin-top: 2rem;
+  } 
 }
 
-.contacto_pie p i{
-  font-size: 1.5rem;
-  color:$color-fondo
-
-}
-.datos_pie p{
-  color: $color-fondo;
-  font-size: 1.5rem;
-}
-
-.derechos_pie{
-  font-size: 1.6rem;
-  color: $color-fondo;
-  text-decoration: none;
-  padding: 3rem;
-  margin-top: 2rem;
-}        
+       
