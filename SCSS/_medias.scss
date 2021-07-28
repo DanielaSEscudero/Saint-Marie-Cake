@@ -6,9 +6,7 @@
   .clearfix img {
     margin: 4rem;
   }
-  header nav{
-    height: auto;
-  }
+  
 }
 
 // Medium devices (tablets, 768px and up)
@@ -16,7 +14,9 @@
   html {
     font-size: 47%;
   }
-
+  header nav{
+    height: auto;
+  }
   #formulario {
     grid-template-areas:
       "titulo titulo"
@@ -35,6 +35,11 @@
   .galeria img {
     padding: 3rem;
   }
+  .container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl{
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -45,21 +50,23 @@
   #barraNav li a {
     font-size: 1.5rem;
   }
+  
   #logo a img {
-    width: 70%;
-    height: 70%;
+    width: 50%;
+    height: 50%;
+    margin: 2rem;
   }
 }
 
 /*media header*/
 @media (max-width: 600px) {
-  .navbar {
+  .navbar-nav {
     align-items: flex-start;
   }
-  .navbar-toggler {
+  .navbar-toggler-icon {
     display: flex;
   }
-  .navbar-link {
+  .nav-link {
     display: none;
     width: 100%;
     ul {

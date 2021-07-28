@@ -40,7 +40,7 @@ header {
   background-color: #ebc5ce;
   border-radius: 2rem;
   font-size: 4rem;
-  margin-right: 5rem;
+  margin-right: 3rem;
 }
 
 #barraNav {
@@ -99,7 +99,7 @@ header nav .navbar-nav {
 }
 
 .logoWsp:hover {
-  animation: name duration timing-function delay iteration-count direction fill-mode;
+  animation: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 /*main general*/
@@ -230,16 +230,16 @@ footer .redes_pie a {
 }
 
 .box-derecha__texto, .box-izquierda__texto {
-  font-size: 2rem;
-  line-height: 2rem;
+  font-size: 1.7rem;
+  line-height: 1.5rem;
   text-align: center;
   width: 40%;
-  padding: 3rem;
+  padding: 2rem;
   margin: 0 1.5rem;
 }
 .box-derecha__texto h2, .box-derecha__texto .h2, .box-derecha__texto p, .box-izquierda__texto h2, .box-izquierda__texto .h2, .box-izquierda__texto p {
   color: black;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: lighter;
   line-height: 3rem;
   text-align: center;
@@ -495,14 +495,12 @@ div[class*=slideRight]:hover img {
 .clearfix p {
   margin: 5rem;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-align: center;
 }
 
 .clearfix img {
   padding: 1rem;
   margin-right: 5rem;
-  width: 40%;
-  height: 50rem;
-  max-width: 100%;
 }
 
 #formulario {
@@ -624,14 +622,14 @@ textarea:focus {
   .clearfix img {
     margin: 4rem;
   }
-
-  header nav {
-    height: auto;
-  }
 }
 @media (max-width: 768px) {
   html {
     font-size: 47%;
+  }
+
+  header nav {
+    height: auto;
   }
 
   #formulario {
@@ -647,6 +645,12 @@ textarea:focus {
   .galeria img {
     padding: 3rem;
   }
+
+  .container, .container-fluid, .container-xxl, .container-sm, .container-md, .container-lg, .container-xl {
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+  }
 }
 @media (max-width: 992px) {
   html {
@@ -658,29 +662,30 @@ textarea:focus {
   }
 
   #logo a img {
-    width: 70%;
-    height: 70%;
+    width: 50%;
+    height: 50%;
+    margin: 2rem;
   }
 }
 /*media header*/
 @media (max-width: 600px) {
-  .navbar {
+  .navbar-nav {
     align-items: flex-start;
   }
 
-  .navbar-toggler {
+  .navbar-toggler-icon {
     display: flex;
   }
 
-  .navbar-link {
+  .nav-link {
     display: none;
     width: 100%;
   }
-  .navbar-link ul {
+  .nav-link ul {
     width: 100%;
     flex-direction: column;
   }
-  .navbar-link ul a {
+  .nav-link ul a {
     padding: 0.5rem 1rem;
   }
 }
