@@ -161,18 +161,11 @@ footer .redes_pie i {
 footer .redes_pie a {
   text-decoration: none;
 }
-
-.contacto_pie p i {
-  font-size: 1.5rem;
-  color: #ebc5ce;
-}
-
-.datos_pie p {
+footer .datos_pie p {
   color: #ebc5ce;
   font-size: 1.5rem;
 }
-
-.derechos_pie {
+footer .derechos_pie {
   font-size: 1.6rem;
   color: #ebc5ce;
   text-decoration: none;
@@ -620,7 +613,15 @@ textarea:focus {
   }
 
   .clearfix img {
-    margin: 4rem;
+    margin: 2rem;
+  }
+
+  footer .datos_pie, footer .derechos_pie {
+    display: none;
+  }
+  footer .redes_pie {
+    display: inline-flex;
+    justify-content: center;
   }
 }
 @media (max-width: 768px) {
