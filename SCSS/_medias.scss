@@ -7,7 +7,10 @@
     margin: 2rem;
   }
   footer{
-    .datos_pie, .derechos_pie{
+    .datos_pie{
+      display: none;
+    }
+    .derechos_pie{
       display: none;
     }
     .redes_pie{
