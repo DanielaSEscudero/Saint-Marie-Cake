@@ -4,7 +4,16 @@
     font-size: 42%;
   }
   .clearfix img {
-    margin: 4rem;
+    margin: 2rem;
+  }
+  footer{
+    .datos_pie, .derechos_pie{
+      display: none;
+    }
+    .redes_pie{
+      display: inline-flex;
+      justify-content: center;
+    }
   }
   
 }
