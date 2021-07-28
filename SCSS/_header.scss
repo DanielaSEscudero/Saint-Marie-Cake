@@ -13,7 +13,7 @@ header {
   background-color: $color-fondo;
   border-radius: 2rem;
   font-size: 4rem;
-  margin-right: 5rem;
+  margin-right: 3rem;
 }
 #barraNav{
   font-family: $nav-font;
@@ -69,5 +69,5 @@ header nav .navbar-nav{
   z-index: 2;
 }
 .logoWsp:hover{
-  animation: name duration timing-function delay iteration-count direction fill-mode;
+  animation: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
