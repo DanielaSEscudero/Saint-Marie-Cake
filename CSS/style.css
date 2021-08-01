@@ -632,6 +632,10 @@ textarea:focus {
     grid-gap: 1rem;
   }
 
+  .contenedor-galeria {
+    margin: auto;
+  }
+
   .galeria img {
     padding: 3rem;
   }
