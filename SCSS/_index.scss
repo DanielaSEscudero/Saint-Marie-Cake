@@ -8,6 +8,7 @@
 }
 
 .box-derecha {
+  width: 80vh;
   margin-bottom: 2rem;
   display: flex;
   flex-direction: row-reverse;
@@ -23,6 +24,8 @@
   max-width: 100%;
   border-radius: 5rem;
   margin: 1rem;
+  vertical-align: middle;
+    border-style: none;
   }
 }
 .box-izquierda {
@@ -42,7 +45,6 @@
   font-size: 1.7rem;
   line-height: 1.5rem;
   text-align: center;
-  width: 40%;
   padding: 2rem;
   margin: 0 1.5rem;
   h2, p{
