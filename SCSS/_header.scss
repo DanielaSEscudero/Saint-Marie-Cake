@@ -19,6 +19,7 @@ header {
 #barraNav{
   font-family: $nav-font;
   text-decoration: none;
+  padding-left: 12rem;
 }
 
 
@@ -70,5 +71,6 @@ header nav .navbar-nav{
   z-index: 2;
 }
 .logoWsp:hover{
-  animation: cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: green;
+  border-radius: 100%;
 }
