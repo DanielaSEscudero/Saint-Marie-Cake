@@ -37,7 +37,8 @@ header {
 }
 
 .navbar-toggler-icon {
-  background-color: #ebc5ce;
+  background-color: #b88d97;
+  border-style: solid;
   border-radius: 2rem;
   font-size: 4rem;
   margin-right: 3rem;
@@ -128,7 +129,6 @@ main p {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
   color: #363034;
-  margin-right: 30px;
 }
 main section div p {
   font-size: 1.5rem;
@@ -182,6 +182,7 @@ footer .derechos_pie {
 }
 
 .box-derecha {
+  width: 80vh;
   margin-bottom: 2rem;
   display: flex;
   flex-direction: row-reverse;
@@ -197,6 +198,8 @@ footer .derechos_pie {
   max-width: 100%;
   border-radius: 5rem;
   margin: 1rem;
+  vertical-align: middle;
+  border-style: none;
 }
 
 .box-izquierda {
@@ -217,7 +220,6 @@ footer .derechos_pie {
   font-size: 1.7rem;
   line-height: 1.5rem;
   text-align: center;
-  width: 40%;
   padding: 2rem;
   margin: 0 1.5rem;
 }
@@ -631,6 +633,10 @@ textarea:focus {
 
   .box-derecha, .box-izquierda {
     flex-direction: column;
+  }
+
+  .col-6 {
+    width: 90%;
   }
 }
 @media (max-width: 992px) {
