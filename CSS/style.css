@@ -123,7 +123,7 @@ header nav .navbar-nav {
   height: auto;
   position: fixed;
   right: 5rem;
-  bottom: 5rem;
+  bottom: 10rem;
   animation-timing-function: linear;
   z-index: 2;
 }
@@ -674,7 +674,7 @@ textarea:focus {
   }
 
   .box-derecha__imagen img, .box-izquierda__imagen img {
-    height: 45rem;
+    height: 40rem;
   }
 }
 @media (max-width: 992px) {
