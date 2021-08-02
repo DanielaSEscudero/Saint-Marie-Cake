@@ -28,19 +28,18 @@
   justify-items: center;
   grid-gap: 0.5rem;
   border-radius: $bordes-redon;
+  img {
+    width: 100%;
+    height: 35rem;
+    width: 10 rem;
+    max-width: 100%;
+    border-radius: $bordes-redon;
+  }
 }
 p {
   font-family: $nav-font;
   font-size: 2rem;
 }
-.tienda__img img {
-  width: 100%;
-  height: 35rem;
-  width: 10 rem;
-  max-width: 100%;
-  border-radius: $bordes-redon;
-}
-
 .tienda__descripcion {
   font-family: $nav-font;
 }

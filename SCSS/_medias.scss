@@ -4,7 +4,8 @@
     font-size: 42%;
   }
   .clearfix img {
-    margin: 2rem;
+    justify-content: center;
+    margin: auto;
   }
   footer{
     .datos_pie{
@@ -53,6 +54,11 @@
   .box-derecha, .box-izquierda{
     flex-direction: column;
   }
+  .box-derecha__imagen, .box-izquierda__imagen{
+    img{
+      height: 45rem;
+    }
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -71,7 +77,7 @@
   }
 }
 
-/*media header*/
+/*media header
 @media (max-width: 600px) {
   .navbar-nav {
     align-items: flex-start;
@@ -90,4 +96,4 @@
       }
     }
   }
-}
+}*/

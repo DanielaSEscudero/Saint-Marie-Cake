@@ -37,11 +37,39 @@ header {
 }
 
 .navbar-toggler-icon {
-  background-color: #b88d97;
-  border-style: solid;
+  border: solid #fff;
   border-radius: 2rem;
   font-size: 4rem;
   margin-right: 3rem;
+  position: relative;
+}
+
+.navbar-toggler-icon::before {
+  content: "";
+  border: solid #fff;
+  border-radius: 1rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+
+.navbar-toggler-icon:after {
+  content: "";
+  border: solid #fff;
+  border-radius: 1rem;
+  width: 2rem;
+  height: 2rem;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
 }
 
 #barraNav {
@@ -91,11 +119,11 @@ header nav .navbar-nav {
 }
 
 .logoWsp {
-  width: 5rem;
+  width: 7rem;
   height: auto;
   position: fixed;
-  left: 90%;
-  bottom: 20%;
+  right: 5rem;
+  bottom: 5rem;
   animation-timing-function: linear;
   z-index: 2;
 }
@@ -176,10 +204,8 @@ footer .derechos_pie {
 }
 
 .container {
-  padding-right: 2rem;
-  padding-left: 2rem;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 1rem;
+  margin: auto;
 }
 
 .box-derecha {
@@ -201,13 +227,16 @@ footer .derechos_pie {
   border-radius: 5rem;
 }
 
+.box-derecha__imagen, .box-izquierda__imagen {
+  align-items: center;
+  justify-items: center;
+}
 .box-derecha__imagen img, .box-izquierda__imagen img {
   width: 100%;
   height: 50rem;
   max-width: 100%;
   border-radius: 5rem;
   margin: 1rem;
-  vertical-align: middle;
 }
 
 .box-derecha__texto, .box-izquierda__texto {
@@ -260,18 +289,17 @@ footer .derechos_pie {
   grid-gap: 0.5rem;
   border-radius: 5rem;
 }
-
-p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-size: 2rem;
-}
-
 .tienda__img img {
   width: 100%;
   height: 35rem;
   width: 10 rem;
   max-width: 100%;
   border-radius: 5rem;
+}
+
+p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 2rem;
 }
 
 .tienda__descripcion {
@@ -602,7 +630,8 @@ textarea:focus {
   }
 
   .clearfix img {
-    margin: 2rem;
+    justify-content: center;
+    margin: auto;
   }
 
   footer .datos_pie, footer .derechos_pie {
@@ -643,6 +672,10 @@ textarea:focus {
   .box-derecha, .box-izquierda {
     flex-direction: column;
   }
+
+  .box-derecha__imagen img, .box-izquierda__imagen img {
+    height: 45rem;
+  }
 }
 @media (max-width: 992px) {
   html {
@@ -659,28 +692,26 @@ textarea:focus {
     margin: 2rem;
   }
 }
-/*media header*/
+/*media header
 @media (max-width: 600px) {
   .navbar-nav {
     align-items: flex-start;
   }
-
   .navbar-toggler-icon {
     display: flex;
   }
-
   .nav-link {
     display: none;
     width: 100%;
+    ul {
+      width: 100%;
+      flex-direction: column;
+      a {
+        padding: 0.5rem 1rem;
+      }
+    }
   }
-  .nav-link ul {
-    width: 100%;
-    flex-direction: column;
-  }
-  .nav-link ul a {
-    padding: 0.5rem 1rem;
-  }
-}
+}*/
 #error {
   width: 100%;
   height: auto;
