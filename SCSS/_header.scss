@@ -10,11 +10,37 @@ header {
   margin-top: 10rem;
 }
 .navbar-toggler-icon {
-  background-color: #b88d97;
-  border-style: solid;
+  border: solid #fff;
   border-radius: 2rem;
   font-size: 4rem;
   margin-right: 3rem;
+  position: relative;
+}
+.navbar-toggler-icon::before{
+  content: "";
+  border: solid #fff;
+  border-radius: 1rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+.navbar-toggler-icon:after{
+  content: "";
+  border: solid #fff;
+  border-radius: 1rem;
+  width: 2rem;
+  height: 2rem;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
 }
 #barraNav{
   font-family: $nav-font;
@@ -62,11 +88,11 @@ header nav .navbar-nav{
 }
 
 .logoWsp{
-  width: 5rem;
+  width: 7rem;
   height: auto;
   position: fixed;
-  left: 90%;
-  bottom: 20%;
+  right: 5rem;
+  bottom: 5rem;
   animation-timing-function: linear;
   z-index: 2;
 }
