@@ -1,15 +1,17 @@
 .tienda {
   background-color: $color-fondo;
-  width: 100%;
   height: auto;
   padding: 1rem;
-  margin: 0 7rem 0 7rem;
+  margin: 0 10rem 0 10rem;
   text-align: center;
 }
 .titulo__tienda {
   font-family: $titulo-font;
-  margin-left: 5rem;
+  font-size: $titulos-size;
   color: $color-font;
+  text-align: center;
+  margin-top: 12rem;
+  margin-bottom: 4rem;
 }
 .contenedor-Productos {
   padding: 1rem 0;
@@ -26,19 +28,18 @@
   justify-items: center;
   grid-gap: 0.5rem;
   border-radius: $bordes-redon;
+  img {
+    width: 100%;
+    height: 35rem;
+    width: 10 rem;
+    max-width: 100%;
+    border-radius: $bordes-redon;
+  }
 }
 p {
   font-family: $nav-font;
   font-size: 2rem;
 }
-.tienda__img img {
-  width: 100%;
-  height: 35rem;
-  width: 10 rem;
-  max-width: 100%;
-  border-radius: $bordes-redon;
-}
-
 .tienda__descripcion {
   font-family: $nav-font;
 }

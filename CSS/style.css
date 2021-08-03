@@ -25,37 +25,74 @@ ul {
 
 /* estilo header*/
 header {
-  margin: 0.5 rem;
-  padding: 0.2 rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
 #logo a img {
-  margin-left: 5rem;
+  border-radius: 100%;
+  margin-left: 10rem;
+  margin-top: 10rem;
 }
 
 .navbar-toggler-icon {
-  background-color: #ebc5ce;
+  border: solid #fff;
   border-radius: 2rem;
   font-size: 4rem;
-  margin-right: 5rem;
+  margin-right: 3rem;
+  position: relative;
+}
+
+.navbar-toggler-icon::before {
+  content: "";
+  border: solid #fff;
+  border-radius: 1rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+
+.navbar-toggler-icon:after {
+  content: "";
+  border: solid #fff;
+  border-radius: 1rem;
+  width: 2rem;
+  height: 2rem;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
 }
 
 #barraNav {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   text-decoration: none;
+  padding-left: 12rem;
 }
 
 .nav-link {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-size: 1.8rem;
-  color: #5b5b5b;
-  text-decoration: none;
+  font-size: 2rem;
+}
+
+.tituloCarrousel {
+  color: black;
+  font-family: "Dancing Script", cursive;
+  font-size: 8rem;
+  text-decoration: solid;
+  margin-bottom: 5rem;
 }
 
 header nav {
+  height: 15vh;
   font-size: 2rem;
   font-family: "Inconsolata", monospace;
   color: black;
@@ -65,30 +102,35 @@ header .nav-item {
   padding: 0 0.8rem;
   list-style: none;
   box-shadow: #ebc5ce;
+  text-decoration: none;
 }
 
 header nav .navbar-nav {
   display: flex;
   margin: 0.3rem;
   padding: 0.5rem;
+  text-decoration: none;
 }
 
 .nav-link:hover {
   color: #12c8dd;
-  background-color: #ebc5ce;
+  background-color: #b88d97;
   border-radius: 5rem;
 }
 
-#whats {
-  color: black;
-  font-size: 5rem;
-  top: 20px;
-  overflow: auto;
-  text-decoration: none;
+.logoWsp {
+  width: 7rem;
+  height: auto;
+  position: fixed;
+  right: 5rem;
+  bottom: 10rem;
+  animation-timing-function: linear;
+  z-index: 2;
 }
-#whats i:hover {
-  color: #12c8dd;
-  font-size: 5.5rem;
+
+.logoWsp:hover {
+  background-color: green;
+  border-radius: 100%;
 }
 
 /*main general*/
@@ -104,13 +146,11 @@ main {
   justify-content: space-between;
 }
 main h1, main .h1 {
-  color: #f04eb5;
   font-family: "Roboto", sans-serif;
   font-size: 4rem;
   padding: 1rem;
 }
 main h2, main .h2 {
-  color: #f04eb5;
   border-color: black;
   font-family: "Roboto", sans-serif;
   font-size: 3rem;
@@ -119,7 +159,6 @@ main p {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
   color: #363034;
-  margin-right: 30px;
 }
 main section div p {
   font-size: 1.5rem;
@@ -135,117 +174,103 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: space-between;
+  align-items: flex-start;
 }
-footer .redesPie {
+footer .redes_pie {
   font-size: 3rem;
   margin: 1rem;
   display: inline-block;
 }
-footer .redesPie i {
+footer .redes_pie i {
   color: #12c8dd;
   margin: 2rem;
   padding: 1rem;
   list-style: none;
 }
-footer .redesPie a {
+footer .redes_pie a {
   text-decoration: none;
 }
-
-footer .redesPie i:hover {
-  color: white;
-  font-size: 4rem;
+footer .datos_pie p {
+  color: #ebc5ce;
+  font-size: 1.5rem;
+}
+footer .derechos_pie {
+  font-size: 1.6rem;
+  color: #ebc5ce;
+  text-decoration: none;
+  padding: 3rem;
+  margin-top: 2rem;
 }
 
-.contenedor__inicio {
-  background-image: url(../multimedia/pexels-silvia-trigo-1857157.jpg);
-  height: 50vh;
+.container {
+  padding: 1rem;
+  margin: auto;
 }
 
-.contenedor__principal {
+.box-derecha {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5rem;
+}
+
+.box-izquierda {
+  margin-bottom: 2rem;
+  display: flex;
   flex-direction: row;
   justify-content: center;
-}
-
-.titulo {
-  color: black;
-  font-family: "Dancing Script", cursive;
-  font-size: 5rem;
-}
-
-.cierre {
-  color: black;
-  font-family: "Dancing Script", cursive;
-  font-size: 5rem;
-  font-weight: 2rem;
-  bottom: 3rem;
-}
-
-.cards {
-  display: flex;
-  flex-direction: row;
-}
-
-.tarjeta {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-size: 1.5rem;
-  background-color: #ebc5ce;
-  border-radius: 1.5rem;
-  padding: 20px;
-  display: flex;
   align-items: center;
-  position: relative;
+  color: #2d2d2d;
+  border-radius: 5rem;
+}
+
+.box-derecha__imagen, .box-izquierda__imagen {
+  align-items: center;
+  justify-items: center;
+}
+.box-derecha__imagen img, .box-izquierda__imagen img {
+  width: 100%;
+  height: 50rem;
+  max-width: 100%;
+  border-radius: 5rem;
   margin: 1rem;
-  padding: 0;
-  box-sizing: border-box;
-}
-.tarjeta a {
-  text-decoration: none;
-}
-.tarjeta a:hover {
-  color: #12c8dd;
-}
-.tarjeta .tarjeta__img {
-  width: 260px;
-  height: 160px;
-  margin-right: 5rem;
-  border-radius: 1.5rem;
-}
-.tarjeta .tarjeta__titulo {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  text-overflow: ellipsis;
 }
 
-.boton {
-  padding: 0.5rem;
-  background-color: #ebc5ce;
+.box-derecha__texto, .box-izquierda__texto {
+  font-size: 2.2rem;
+  line-height: 1.5rem;
+  text-align: center;
+  padding: 2rem;
+  margin: 0 1.5rem;
+}
+.box-derecha__texto p, .box-izquierda__texto p {
   color: black;
-  box-shadow: 0.5rem 0.5rem #5b5b5b;
-  border-radius: 2rem;
   font-size: 2rem;
-  text-decoration: none;
-}
-
-.boton--derecha {
-  position: absolute;
-  right: 2rem;
-  bottom: 0rem;
+  font-weight: lighter;
+  line-height: 3rem;
+  text-align: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 .tienda {
   background-color: #ebc5ce;
-  width: 100%;
   height: auto;
   padding: 1rem;
-  margin: 0 7rem 0 7rem;
+  margin: 0 10rem 0 10rem;
   text-align: center;
 }
 
 .titulo__tienda {
   font-family: "Dancing Script", cursive;
-  margin-left: 5rem;
-  color: #5b5b5b;
+  font-size: 7rem;
+  color: #111010;
+  text-align: center;
+  margin-top: 12rem;
+  margin-bottom: 4rem;
 }
 
 .contenedor-Productos {
@@ -264,18 +289,17 @@ footer .redesPie i:hover {
   grid-gap: 0.5rem;
   border-radius: 5rem;
 }
-
-p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-size: 2rem;
-}
-
 .tienda__img img {
   width: 100%;
   height: 35rem;
   width: 10 rem;
   max-width: 100%;
   border-radius: 5rem;
+}
+
+p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 2rem;
 }
 
 .tienda__descripcion {
@@ -296,7 +320,7 @@ p {
   background-color: #ebc5ce;
 }
 .btn--Ver a {
-  color: #5b5b5b;
+  color: #111010;
   text-decoration: none;
 }
 
@@ -426,6 +450,12 @@ div[class*=slideRight]:hover img {
   filter: brightness(100%);
 }
 
+.contenedor-galeria {
+  padding: 1rem;
+  margin: 0 8rem 0 8rem;
+  text-align: center;
+}
+
 .galeria img {
   width: 100%;
   height: 35rem;
@@ -434,26 +464,53 @@ div[class*=slideRight]:hover img {
   border-radius: 5rem;
 }
 
-.galeria h1, .galeria .h1 {
+.titulo_Galeria {
   font-family: "Dancing Script", cursive;
-  color: #5b5b5b;
-  justify-content: center;
+  font-size: 7rem;
+  color: #111010;
+  text-align: center;
+  margin-top: 12rem;
+  margin-bottom: 4rem;
+}
+
+.sub-galeria {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.sub-galeria .sub-link {
+  text-decoration: none;
+  font-size: 2rem;
+}
+.sub-galeria .sub-link:hover {
+  background-color: #b88d97;
+  border-radius: 5rem;
+}
+
+.clearfix {
+  padding: 1rem;
+  margin: 0 2rem 0 2rem;
+  text-align: center;
 }
 
 .titulo__nosotros {
   font-family: "Dancing Script", cursive;
-  margin-left: 5rem;
-  color: #5b5b5b;
-  justify-content: space-between;
+  font-size: 7rem;
+  color: #111010;
+  text-align: center;
+  margin-top: 12rem;
+  margin-bottom: 4rem;
 }
 
 .clearfix p {
   margin: 5rem;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-align: center;
 }
 
 .clearfix img {
   padding: 1rem;
+  margin-right: 5rem;
 }
 
 #formulario {
@@ -477,8 +534,11 @@ div[class*=slideRight]:hover img {
 .titulo__contacto {
   grid-area: titulo;
   font-family: "Dancing Script", cursive;
-  margin-left: 5rem;
-  color: #5b5b5b;
+  font-size: 7rem;
+  color: #111010;
+  text-align: center;
+  margin-top: 12rem;
+  margin-bottom: 4rem;
 }
 
 .datos--1 {
@@ -523,7 +583,7 @@ div[class*=slideRight]:hover img {
 
 input {
   width: 10rem;
-  transition: all 2s;
+  transition: all 1s;
 }
 
 input:focus {
@@ -534,7 +594,7 @@ input:focus {
 textarea {
   width: 35rem;
   height: 27rem;
-  transition: all 2s;
+  transition: all 1s;
 }
 
 textarea:focus {
@@ -558,18 +618,40 @@ textarea:focus {
   padding: 1rem;
 }
 
+.maps {
+  display: flex;
+  justify-content: center;
+  background-color: #f0bab0;
+}
+
 @media (max-width: 576px) {
   html {
     font-size: 42%;
   }
 
   .clearfix img {
-    margin: 4rem;
+    justify-content: center;
+    margin: auto;
+  }
+
+  footer .datos_pie {
+    display: none;
+  }
+  footer .derechos_pie {
+    display: none;
+  }
+  footer .redes_pie {
+    display: inline-flex;
+    justify-content: center;
   }
 }
 @media (max-width: 768px) {
   html {
     font-size: 47%;
+  }
+
+  header nav {
+    height: auto;
   }
 
   #formulario {
@@ -582,8 +664,20 @@ textarea:focus {
     grid-gap: 1rem;
   }
 
+  .contenedor-galeria {
+    margin: auto;
+  }
+
   .galeria img {
     padding: 3rem;
+  }
+
+  .box-derecha, .box-izquierda {
+    flex-direction: column;
+  }
+
+  .box-derecha__imagen img, .box-izquierda__imagen img {
+    height: 40rem;
   }
 }
 @media (max-width: 992px) {
@@ -596,34 +690,14 @@ textarea:focus {
   }
 
   #logo a img {
-    width: 70%;
-    height: 70%;
-  }
-}
-/*media header*/
-@media (max-width: 600px) {
-  .navbar {
-    align-items: flex-start;
-  }
-
-  .navbar-toggler {
-    display: flex;
-  }
-
-  .navbar-link {
-    display: none;
-    width: 100%;
-  }
-  .navbar-link ul {
-    width: 100%;
-    flex-direction: column;
-  }
-  .navbar-link ul a {
-    padding: 0.5rem 1rem;
+    width: 50%;
+    height: 50%;
+    margin: 2rem;
   }
 }
 #error {
-  height: 90vh;
+  width: 100%;
+  height: auto;
   background-color: #ebc5ce;
 }
 #error section h2, #error section .h2 {
@@ -632,27 +706,19 @@ textarea:focus {
   text-align: center;
   font-size: 3rem;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  color: #5b5b5b;
+  color: #111010;
 }
 #error section div {
   position: relative;
 }
-#error section div .error {
-  font-family: "Dancing Script", cursive;
-  text-align: center;
-  text-shadow: 2px 2px 2px #ceccc4;
-  font-size: 9rem;
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.3);
-}
 #error section div h2, #error section div .h2 {
   position: absolute;
-  top: 35%;
+  top: 20%;
   width: 100%;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  color: #5b5b5b;
+  color: #111010;
 }
 #error section h3, #error section .h3 {
   margin-top: 5rem;
@@ -661,12 +727,17 @@ textarea:focus {
 }
 #error section h3 a, #error section .h3 a {
   font-size: 5rem;
-  color: white;
+  color: #111010;
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 #error section h3 a:hover, #error section .h3 a:hover {
   color: #12c8dd;
+}
+
+.error404 {
+  width: 35rem;
+  margin: auto;
 }
 
 /*!

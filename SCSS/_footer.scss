@@ -4,9 +4,10 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: space-between;
+  align-items: flex-start;
 
-  .redesPie {
+  .redes_pie {
     font-size: 3rem;
     margin: 1rem;
     display: inline-block;
@@ -20,9 +21,18 @@ footer {
       text-decoration: none;
     }
   }
+  .datos_pie p{
+    color: $color-fondo;
+    font-size: 1.5rem;
+  }
+  
+  .derechos_pie{
+    font-size: 1.6rem;
+    color: $color-fondo;
+    text-decoration: none;
+    padding: 3rem;
+    margin-top: 2rem;
+  } 
 }
 
-footer .redesPie i:hover {
-  color: white;
-  font-size: 4rem;
-}
+       

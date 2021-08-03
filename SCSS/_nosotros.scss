@@ -1,13 +1,23 @@
+.clearfix{
+  padding: 1rem;
+  margin: 0 2rem 0 2rem;
+  text-align: center;
+}
 .titulo__nosotros {
   font-family: $titulo-font;
-  margin-left: 5rem;
+  font-size: $titulos-size;
   color: $color-font;
-  justify-content: space-between;
+  text-align: center;
+  margin-top: 12rem;
+  margin-bottom: 4rem;
 }
 .clearfix p {
   margin: 5rem;
   font-family: $nav-font;
+  text-align: center;
 }
 .clearfix img {
   padding: 1rem;
+  margin-right: 5rem;
+  
 }

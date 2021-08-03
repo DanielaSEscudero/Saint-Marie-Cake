@@ -24,8 +24,12 @@
 .titulo__contacto {
   grid-area: titulo;
   font-family: $titulo-font;
-  margin-left: 5rem;
+  font-size: $titulos-size;
   color: $color-font;
+  text-align: center;
+  margin-top: 12rem;
+  margin-bottom: 4rem;
+
 }
 .datos--1 {
   grid-area: nombre;
@@ -64,7 +68,7 @@
 }
 input {
   width: 10rem;
-  transition: all 2s;
+  transition: all 1s;
 }
 input:focus {
   width: 30rem;
@@ -73,7 +77,7 @@ input:focus {
 textarea {
   width: 35rem;
   height: 27rem;
-  transition: all 2s;
+  transition: all 1s;
 }
 textarea:focus {
   width: 45rem;
@@ -92,4 +96,9 @@ textarea:focus {
   grid-area: enviar;
   margin: 1rem;
   padding: 1rem;
+}
+.maps{
+  display: flex;
+  justify-content: center;
+  background-color: #f0bab0;
 }

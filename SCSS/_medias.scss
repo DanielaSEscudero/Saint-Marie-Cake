@@ -4,8 +4,22 @@
     font-size: 42%;
   }
   .clearfix img {
-    margin: 4rem;
+    justify-content: center;
+    margin: auto;
   }
+  footer{
+    .datos_pie{
+      display: none;
+    }
+    .derechos_pie{
+      display: none;
+    }
+    .redes_pie{
+      display: inline-flex;
+      justify-content: center;
+    }
+  }
+  
 }
 
 // Medium devices (tablets, 768px and up)
@@ -13,7 +27,9 @@
   html {
     font-size: 47%;
   }
-
+  header nav{
+    height: auto;
+  }
   #formulario {
     grid-template-areas:
       "titulo titulo"
@@ -29,8 +45,19 @@
     grid-template-rows: auto;
     grid-gap: 1rem;
   }
+  .contenedor-galeria{
+    margin: auto;
+  }
   .galeria img {
     padding: 3rem;
+  }
+  .box-derecha, .box-izquierda{
+    flex-direction: column;
+  }
+  .box-derecha__imagen, .box-izquierda__imagen{
+    img{
+      height: 40rem;
+    }
   }
 }
 
@@ -42,29 +69,12 @@
   #barraNav li a {
     font-size: 1.5rem;
   }
+  
   #logo a img {
-    width: 70%;
-    height: 70%;
+    width: 50%;
+    height: 50%;
+    margin: 2rem;
   }
 }
 
-/*media header*/
-@media (max-width: 600px) {
-  .navbar {
-    align-items: flex-start;
-  }
-  .navbar-toggler {
-    display: flex;
-  }
-  .navbar-link {
-    display: none;
-    width: 100%;
-    ul {
-      width: 100%;
-      flex-direction: column;
-      a {
-        padding: 0.5rem 1rem;
-      }
-    }
-  }
-}
+

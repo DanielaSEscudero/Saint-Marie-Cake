@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Montserrat&family=Permanent+Marker&family=Slackey&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="multimedia/favicon.ico" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet"> 
     <!-- Bootstrap CSS -->
@@ -26,140 +27,212 @@
   </head>
   <body>
     <header class="row">
-      <nav class="navbar navbar-expand-lg " style="background-color: white;"> 
-        <div id="logo" class="col-4" style="text-decoration: none;">
+      <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #f0bab0;" >
+        <div id="logo" class="col-6" >
           <a href="index.html"
             ><img 
-              src="multimedia/logo.jpg"
+              src="multimedia/logo.png"
               width="210px 210px"
               alt="logo" /></a>
         </div>
-        <div id="whats" class="col-2 row-cols-md-1">
-          <li><a href="https://wa.me/1137950122">
-            <i class="fab fa-whatsapp"></i></a>
-          </li>
-        </div>
-        <div class="navbar-items" id="navBarNav">
+        <div class="fixedNav navbar-items" id="navBarNav">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav col-6 me-auto mb-2 mb-lg-0" id="barraNav">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="index.html">INICIO</a>
+                  <a class="nav-link active" style="color: black;" aria-current="page" href="index.html">INICIO</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="productos.html">PRODUCTOS</a>
+                  <a class="nav-link" style="color: black;" href="productos.html">PRODUCTOS</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="galeria.html">GALERIA</a>
+                  <a class="nav-link" style="color: black;" href="galeria.html">GALERIA</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                  <a class="nav-link" style="color: black;" href="nosotros.html">NOSOTROS</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contacto.html">CONTACTO</a>
+                  <a class="nav-link" style="color: black;" href="contacto.html">CONTACTO</a>
                 </li>
               </ul>
             </div>
           </div>
-        </nav>
+      </nav>
+      <a id="whats" href="https://wa.me/1137950122" target="_blank">
+          <img
+              class="logoWsp wow bounceInDown"
+              data-wow-duration=" 3s"
+              src="multimedia/pngegg.png"
+              width="150px 150px"
+              alt="Logo Whatsapp"
+      /></a>
     </header>
     <main class="galeria">
-      <h1 class="titulo mt-4 mb-5">Galeria</h1>
+      <h1 class="titulo_Galeria">Galeria</h1>
+      <div class="col-12">
+        <ul>
+          <li class="sub-galeria">
+            <a class="sub-link" style="color: black;" href="#infantiles"> INFANTILES </a>
+          </li>
+          <li class="sub-galeria">
+            <a class="sub-link" style="color: black;" href="#cumples"> CUMPLES </a>
+          </li>
+          <li class="sub-galeria">
+            <a class="sub-link" style="color: black;" href="#bautismo"> BAUTISMOS/COMUNION </a>
+          </li>
+          <li class="sub-galeria">
+            <a class="sub-link" style="color: black;" href="#cakes"> CAKES </a>
+          </li>
+          <li class="sub-galeria">
+            <a class="sub-link" style="color: black;" href="#especiales"> ESPECIALES </a>
+          </li>
+        </ul>
+      </div>
       <section class="contenedor-galeria">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" id="infantiles">
           <div class="col-12 col-sm-6 col-md-3 slideRight-600ms">
             <a href="multimedia/Galeria/Pajarito.jpg" data-lightbox="roadtrip" data-title="torta pajaros">
-              <img src="multimedia/Galeria/Pajarito.jpg" id="pajarito" class="img-fluid" style="border-radius: 50px;"/>
+              <img src="multimedia/Galeria/Pajarito.jpg" alt="Pajarito" class="img-fluid" style="border-radius: 50px;"/>
             </a>
           </div>
           <div class="col-12 col-sm-6 col-md-3 slideRight-400ms">
             <a href="multimedia/Galeria/ReyLeon.jpg" data-lightbox="roadtrip" data-title="torta Rey Leon">
-              <img src="multimedia/Galeria/ReyLeon.jpg" id="ReyLeon" class="img-fluid"/>
+              <img src="multimedia/Galeria/ReyLeon.jpg" alt="ReyLeon" class="img-fluid"/>
             </a>
           </div>
           <div class="col-12 col-sm-6 col-md-3 slideRight-200ms">
-            <a href="multimedia/Galeria/torta brownie.JPG" data-lightbox="roadtrip" data-title="torta brownie">
-              <img src="multimedia/Galeria/torta brownie.JPG"  id="brownie" class="img-fluid"/>
+            <a href="multimedia/Galeria/Roblox.jpg" data-lightbox="roadtrip" data-title="torta brownie">
+              <img src="multimedia/Galeria/Roblox.jpg"  alt="Roblox" class="img-fluid"/>
             </a>
           </div>
           <div class="col-12 col-sm-6 col-md-3 slideRight-0">
             <a href="multimedia/Galeria/Bebesllorones.jpg" data-lightbox="roadtrip" data-title="torta Bebes Llorones">
-              <img src="multimedia/Galeria/Bebesllorones.jpg" id="bebes" class="img-fluid"/>
+              <img src="multimedia/Galeria/Bebesllorones.jpg" alt="Bebes" class="img-fluid"/>
             </a>
           </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" id="cumples">
           <div class="col-12 col-sm-6 col-md-3  slideRight-1400ms"> 
             <a href="multimedia/Galeria/celeste.JPG" data-lightbox="roadtrip" data-title="torta Celeste">
-              <img src="multimedia/Galeria/celeste.JPG" id="celeste" class="img-fluid" />
+              <img src="multimedia/Galeria/celeste.JPG" alt="Celeste" class="img-fluid" />
             </a>
           </div>
           <div class="col-12 col-sm-6 col-md-3  slideRight-1200ms">
             <a href="multimedia/Galeria/Animalprint.jpg" data-lightbox="roadtrip" data-title="torta Animal Print">
-              <img src="multimedia/Galeria/Animalprint.jpg" id="animalprint" class="img-fluid"/>
+              <img src="multimedia/Galeria/Animalprint.jpg" alt="Animalprint" class="img-fluid"/>
             </a>
           </div>
           <div class="col-12 col-sm-6 col-md-3 slideRight-1000ms">
-            <a href="multimedia/Galeria/cheese.jpg" data-lightbox="roadtrip" data-title="cheese">
-              <img src="multimedia/Galeria/cheese.jpg" id="cheese" class="img-fluid"/>
+            <a href="multimedia/Galeria/River.JPG" data-lightbox="roadtrip" data-title="cheese">
+              <img src="multimedia/Galeria/River.JPG" alt="River" class="img-fluid"/>
             </a>
           </div>
           <div class="col-12 col-sm-6 col-md-3 slideRight-800ms">
-            <a href="multimedia/Galeria/torta brownie.JPG" data-lightbox="roadtrip" data-title="Torta brownie">
-              <img src="multimedia/Galeria/torta brownie.JPG" id="brownie"class="img-fluid"/>
+            <a href="multimedia/Galeria/Donas.jpg" data-lightbox="roadtrip" data-title="Torta brownie">
+              <img src="multimedia/Galeria/Donas.jpg" alt="Donas"class="img-fluid"/>
             </a>
           </div>
         </div>
-         <div class="row justify-content-center">
+         <div class="row justify-content-center" id="bautismo">
           <div class="col-12 col-sm-6 col-md-3 slideRight-2200ms">
-            <a href="multimedia/Galeria/Donas.jpg" data-lightbox="roadtrip" data-title="torta Donas">
-              <img src="multimedia/Galeria/Donas.jpg" id="Donas" class="img-fluid"/>
+            <a href="multimedia/Galeria/Bautismo.jpg" data-lightbox="roadtrip" data-title="torta Donas">
+              <img src="multimedia/Galeria/Bautismo.jpg" alt="Bautismo" class="img-fluid"/>
             </a>
           </div>
           <div class="col-12 col-sm-6 col-md-3 slideRight-2000ms">
-            <a href="multimedia/Galeria/Bautismo.jpg" data-lightbox="roadtrip" data-title="torta Bautismo">
-              <img src="multimedia/Galeria/Bautismo.jpg" id="pajarito" class="img-fluid"/>
+            <a href="multimedia/Galeria/comunin 2.jpg" data-lightbox="roadtrip" data-title="torta Bautismo">
+              <img src="multimedia/Galeria/comunin 2.jpg" alt="Comunion" class="img-fluid"/>
             </a>
           </div>
           <div class="col-12 col-sm-6 col-md-3 slideRight-1800ms"> 
-            <a href="multimedia/Galeria/comunin 2.jpg" data-lightbox="roadtrip" data-title="torta Comunion">
-              <img src="multimedia/Galeria/comunin 2.jpg" id="sonic" class="img-fluid"/>
+            <a href="multimedia/Galeria/Banderines.jpg" data-lightbox="roadtrip" data-title="torta Comunion">
+              <img src="multimedia/Galeria/Banderines.jpg" alt="Banderines" class="img-fluid"/>
             </a>
           </div>
           <div class="col-12 col-sm-6 col-md-3 slideRight-1600ms"> 
-            <a href="multimedia/Galeria/chocotorta 1.jpg" data-lightbox="roadtrip" data-title="Chocotorta">
-              <img src="multimedia/Galeria/chocotorta 1.jpg" id="brownie" class="img-fluid"/>
+            <a href="multimedia/Galeria/Comunion.jpg" data-lightbox="roadtrip" data-title="Chocotorta">
+              <img src="multimedia/Galeria/Comunion.jpg" alt="Comunion" class="img-fluid"/>
             </a>
         </div> 
         </div> 
+        <div class="row justify-content-center" id="cakes">
+          <div class="col-12 col-sm-6 col-md-3 slideRight-600ms">
+            <a href="multimedia/Galeria/chocotorta 1.jpg" data-lightbox="roadtrip" data-title="torta pajaros">
+              <img src="multimedia/Galeria/chocotorta 1.jpg" alt="Choco" class="img-fluid" style="border-radius: 50px;"/>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 slideRight-400ms">
+            <a href="multimedia/Galeria/cheesecake.JPG" data-lightbox="roadtrip" data-title="torta Rey Leon">
+              <img src="multimedia/Galeria/cheesecake.JPG" alt="Cheese" class="img-fluid"/>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 slideRight-200ms">
+            <a href="multimedia/Galeria/torta brownie.JPG" data-lightbox="roadtrip" data-title="torta brownie">
+              <img src="multimedia/Galeria/torta brownie.JPG"  alt="Brownie" class="img-fluid"/>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 slideRight-0">
+            <a href="multimedia/Galeria/Cheesebrownie.jpg" data-lightbox="roadtrip" data-title="torta Bebes Llorones">
+              <img src="multimedia/Galeria/Cheesebrownie.jpg" alt="Cheesebrownie" class="img-fluid"/>
+            </a>
+          </div>
+        </div>
+        <div class="row justify-content-center" id="especiales">
+          <div class="col-12 col-sm-6 col-md-3  slideRight-1400ms"> 
+            <a href="multimedia/Galeria/Alfajores2.JPG" data-lightbox="roadtrip" data-title="torta Celeste">
+              <img src="multimedia/Galeria/Alfajores2.JPG" id="" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3  slideRight-1200ms">
+            <a href="multimedia/Galeria/Paletas tiktook.JPG" data-lightbox="roadtrip" data-title="torta Animal Print">
+              <img src="multimedia/Galeria/Paletas tiktook.JPG" alt="tiktok" class="img-fluid"/>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 slideRight-1000ms">
+            <a href="multimedia/Galeria/Box cumple.JPG" data-lightbox="roadtrip" data-title="cheese">
+              <img src="multimedia/Galeria/Box cumple.JPG" alt="Box" class="img-fluid"/>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 slideRight-800ms">
+            <a href="multimedia/Galeria/pascua.jpg" data-lightbox="roadtrip" data-title="Torta brownie">
+              <img src="multimedia/Galeria/pascua.jpg" alt="pascua" class="img-fluid"/>
+            </a>
+          </div>
+        </div>
       </section>
     </main>
-    <footer id="pieDePagina">
-      <div class="redesPie">
+    <footer id="pie_pagina">
+      <div class="datos_pie col-4">
+        <p> Contacto </p>
+        <p><i class="fas fa-envelope"> </i> saintmariecake@gmail.com</p>
+        <p><i class="fas fa-mobile"></i> +54 9 11111111</p>
+        <p><i class="fas fa-compass"></i> calle sin nombre 123</p>
+      </div>
+      <div class="redes_pie col-4">
         <a
           href="https://www.tiktok.com/@mayrariveros8?lang=es&is_copy_url=1&is_from_webapp=v1"
           target="_blank"
-        ><i class="fab fa-tiktok"></i>
+        ><i class="fab fa-tiktok"> </i>
           </a>
         <a
           href="https://www.facebook.com/Saint-Marie-Cositas-Dulces-487951608066101"
           target="_blank"
-          ><i class="fab fa-facebook-square"></i>
+          ><i class="fab fa-facebook-square"> </i>
         </a>
         <a
           href="https://www.instagram.com/saintmarie_cake/?hl=es-la"
           target="_blank"
-          ><i class="fab fa-instagram"></i>
+          ><i class="fab fa-instagram"> </i></a>
       </div>
-    </footer>
-    <div class="container">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html">Saint Marie Cake</a></li>
-        <li class="breadcrumb-item active">Galeria</li>
-      </ol>
+        <span class="derechos_pie">Diseño & Desarrollo Web - Daniela Escudero</span>
+
     </div>
-    <script src="bootstrap/dist/js/bootstrap.js"></script>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   </body>
 </html>
