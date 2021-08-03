@@ -1,8 +1,7 @@
 .tienda {
   background-color: $color-fondo;
   height: auto;
-  padding: 1rem;
-  margin: 0 10rem 0 10rem;
+  
   text-align: center;
 }
 .titulo__tienda {
@@ -14,8 +13,8 @@
   margin-bottom: 4rem;
 }
 .contenedor-Productos {
-  padding: 1rem 0;
-  margin: 2rem;
+  width: 90%;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
