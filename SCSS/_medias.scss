@@ -8,7 +8,10 @@
     margin: auto;
   }
   footer{
-    .datos_pie, .derechos_pie{
+    .datos_pie{
+      display: none;
+    }
+    .derechos_pie{
       display: none;
     }
     .redes_pie{
@@ -74,23 +77,4 @@
   }
 }
 
-/*media header
-@media (max-width: 600px) {
-  .navbar-nav {
-    align-items: flex-start;
-  }
-  .navbar-toggler-icon {
-    display: flex;
-  }
-  .nav-link {
-    display: none;
-    width: 100%;
-    ul {
-      width: 100%;
-      flex-direction: column;
-      a {
-        padding: 0.5rem 1rem;
-      }
-    }
-  }
-}*/
+
