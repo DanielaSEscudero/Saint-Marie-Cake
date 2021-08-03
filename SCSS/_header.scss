@@ -53,13 +53,6 @@ header {
   font-family: $nav-font;
   font-size: 2rem;
 }
-.tituloCarrousel{
-  color: black;
-  font-family: "Dancing Script", cursive;
-  font-size: 8rem;
-  text-decoration: solid;
-  margin-bottom: 5rem;
-}
 
 header nav {
   height: 15vh;
@@ -87,7 +80,7 @@ header nav .navbar-nav{
   border-radius: 5rem;
 }
 
-.logoWsp{
+.logo-wsp{
   width: 7rem;
   height: auto;
   position: fixed;
@@ -96,7 +89,7 @@ header nav .navbar-nav{
   animation-timing-function: linear;
   z-index: 2;
 }
-.logoWsp:hover{
+.logo-wsp:hover{
   background-color: green;
   border-radius: 100%;
 }

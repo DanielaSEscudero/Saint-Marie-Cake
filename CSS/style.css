@@ -83,14 +83,6 @@ header {
   font-size: 2rem;
 }
 
-.tituloCarrousel {
-  color: black;
-  font-family: "Dancing Script", cursive;
-  font-size: 8rem;
-  text-decoration: solid;
-  margin-bottom: 5rem;
-}
-
 header nav {
   height: 15vh;
   font-size: 2rem;
@@ -118,7 +110,7 @@ header nav .navbar-nav {
   border-radius: 5rem;
 }
 
-.logoWsp {
+.logo-wsp {
   width: 7rem;
   height: auto;
   position: fixed;
@@ -128,7 +120,7 @@ header nav .navbar-nav {
   z-index: 2;
 }
 
-.logoWsp:hover {
+.logo-wsp:hover {
   background-color: green;
   border-radius: 100%;
 }
@@ -721,12 +713,12 @@ textarea:focus {
   color: #111010;
 }
 #error section h3, #error section .h3 {
-  margin-top: 5rem;
+  margin-top: 8rem;
   width: 100%;
   text-align: center;
 }
 #error section h3 a, #error section .h3 a {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #111010;
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
