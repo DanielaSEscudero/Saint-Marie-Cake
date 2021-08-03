@@ -2,7 +2,10 @@
   width: 100%;
   height: auto;
   background-color: $color-fondo;
-
+  .error404{
+    width: 35rem;
+    margin: auto;
+  }
   section {
     h2 {
       margin-top: 2rem;
@@ -39,8 +42,4 @@
       }
     }
   }
-}
-.error404{
-  width: 35rem;
-  margin: auto;
 }

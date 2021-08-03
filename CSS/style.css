@@ -692,6 +692,10 @@ textarea:focus {
   height: auto;
   background-color: #ebc5ce;
 }
+#error .error404 {
+  width: 35rem;
+  margin: auto;
+}
 #error section h2, #error section .h2 {
   margin-top: 2rem;
   width: 100%;
@@ -725,11 +729,6 @@ textarea:focus {
 }
 #error section h3 a:hover, #error section .h3 a:hover {
   color: #12c8dd;
-}
-
-.error404 {
-  width: 35rem;
-  margin: auto;
 }
 
 /*!
