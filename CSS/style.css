@@ -634,7 +634,10 @@ textarea:focus {
     margin: auto;
   }
 
-  footer .datos_pie, footer .derechos_pie {
+  footer .datos_pie {
+    display: none;
+  }
+  footer .derechos_pie {
     display: none;
   }
   footer .redes_pie {
@@ -692,26 +695,6 @@ textarea:focus {
     margin: 2rem;
   }
 }
-/*media header
-@media (max-width: 600px) {
-  .navbar-nav {
-    align-items: flex-start;
-  }
-  .navbar-toggler-icon {
-    display: flex;
-  }
-  .nav-link {
-    display: none;
-    width: 100%;
-    ul {
-      width: 100%;
-      flex-direction: column;
-      a {
-        padding: 0.5rem 1rem;
-      }
-    }
-  }
-}*/
 #error {
   width: 100%;
   height: auto;
@@ -753,8 +736,8 @@ textarea:focus {
 }
 
 .error404 {
-  margin-top: 0rem;
-  margin-left: 53rem;
+  width: 35rem;
+  margin: auto;
 }
 
 /*!
